@@ -7,6 +7,6 @@ export class Constants {
   static typeRoomInit = "roomInit";
   static typeRoom = "room";
   static typeUserOnline = "userOnline";
-  static domainHTTP = "http://192.168.1.102:3000";
-  static domainWS = "ws://192.168.1.102:3003";
+  static domainHTTP = "http://localhost:3000";
+  static domainWS = "ws://localhost:3003";
 }
