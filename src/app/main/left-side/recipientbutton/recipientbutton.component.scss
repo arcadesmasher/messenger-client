@@ -1,0 +1,50 @@
+.recipientButton {
+  background-color: orange;
+  color: black;
+  width: 100%;
+  margin-bottom: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.recipientButton:hover {
+  animation-duration: 0.5s;
+  animation-name: hoveringAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes hoveringAnimation {
+  to {
+    color: gray;
+    background-color: bisque;
+  }
+}
+
+.newMessageIcon {
+  width: 2vh;
+  height: 2vh;
+}
+
+.roomName {
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lastMessageDate {
+  text-align: right;
+  font: italic;
+  font-size: smaller;
+}
+
+.message {
+  font-size: medium;
+}
+
+.onlineIndicator {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 1px;
+}

@@ -1,0 +1,7 @@
+<div *ngIf="room.roomKey.length > 0">
+  You're conversating with: {{room.toEMail}}
+  <textarea class="textArea" id="chat-box" [(ngModel)]="messageStack" readonly></textarea>
+  <br/>
+  <input id="message-box" [(ngModel)]="message">
+  <button class="btn btn-primary" (click)="sendMessage()">Send Message</button>
+</div>

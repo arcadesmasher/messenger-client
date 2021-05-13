@@ -1,0 +1,11 @@
+<div *ngIf="!isAuthDone">
+  Please authenticate.
+</div>
+<div *ngIf="isAuthDone" class="main">
+  <top-side></top-side>
+  <div class="mid">
+    <left-side class="leftSide"></left-side>
+    <right-side class="rightSide"></right-side>
+  </div>
+  <bottom-side></bottom-side>
+</div>

@@ -1,0 +1,15 @@
+<div class="recipientButton" (click)="changeRoom()">
+  <div>
+    <img *ngIf="isOnline" class="onlineIndicator" src="../../../../assets/img/online.png">
+    <img *ngIf="!isOnline" class="onlineIndicator" src="../../../../assets/img/offline.png">
+    <b class="roomName">{{roomName}}</b>
+  </div>
+  <div *ngIf="lastMessageText" class="lastMessageDate">
+    Last message on: {{lastMessageDate}}
+  </div>
+  <div>
+    <img *ngIf="newMessageExists" class="newMessageIcon" src="../../../../assets/img/new_msg.png">
+    <b *ngIf="lastMessageText" class="message">{{lastMessageFrom + ": "}}</b>
+    <i class="message">{{lastMessageText}}</i>
+  </div>
+</div>

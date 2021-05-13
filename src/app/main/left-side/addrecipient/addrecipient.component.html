@@ -1,0 +1,9 @@
+<div class="addRecipient">
+  <button class="btn btn-success addRecipientButton" (click)="changeAddRecipientVisible()">Add Recipient</button>
+  <div class="recipientElements" *ngIf="isAddRecipientVisible">
+    <input [(ngModel)]="recipient" placeholder="Type recipient's e-mail...">
+    <button class="btn btn-primary" (click)="addRecipient()">Add</button>
+  </div>
+</div>
+
+
