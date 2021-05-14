@@ -1,12 +1,26 @@
-<div>
-  <h1>Registration</h1>
-  <div>
-    <label id=emailLabel>E-Mail</label>
-    <input id=email [(ngModel)]=email>
+<div class="back">
+  <br/>
+  <div class="content">
+    <div class="centerer">
+      <h1>Registration</h1>
+    </div>
+    <br/>
+    <div class="centerer">
+      <label id=emailLabel>E-Mail</label>
+      <input id=email [(ngModel)]=email>
+    </div>
+    <br/>
+    <div class="centerer">
+      <label id=passwordLabel>Password</label>
+      <input type=password id=password [(ngModel)]=password>
+    </div>
+    <br/>
+    <div class="centerer">
+      <button class="btn btn-primary" (click)="register()">Register</button>
+    </div>
+    <br/>
+    <div class="centerer">
+      <button class="btn btn-danger" routerLink="/">Back</button>
+    </div>
   </div>
-  <div>
-    <label id=passwordLabel>Password</label>
-    <input type=password id=password [(ngModel)]=password>
-  </div>
-  <button class="btn btn-primary" (click)="register()">Register</button>
 </div>

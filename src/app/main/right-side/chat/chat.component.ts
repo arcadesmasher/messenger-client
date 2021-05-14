@@ -56,6 +56,13 @@ export class ChatComponent implements OnInit {
     let chatMessage: IChatMessage = { fromEMail: this.dataService.loggedInEMail, toRoom: this.room.roomKey, messageText: this.message };
     let message: IWSMessage = { wsMessageType: "chat", wsMessageBody: chatMessage, wsMessageDate: Now.getNow() };
     this.websocketService.sendWSMessage(message);
+    this.message = "";
+  }
+
+  keyPress(event: KeyboardEvent) {
+    if(event.key === "Enter"){
+      this.sendMessage();
+    }
   }
 
   //#region Get - Set

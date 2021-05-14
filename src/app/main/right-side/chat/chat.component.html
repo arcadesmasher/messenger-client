@@ -2,6 +2,6 @@
   You're conversating with: {{room.toEMail}}
   <textarea class="textArea" id="chat-box" [(ngModel)]="messageStack" readonly></textarea>
   <br/>
-  <input id="message-box" [(ngModel)]="message">
+  <input id="message-box" [(ngModel)]="message" (keypress)="keyPress($event)">
   <button class="btn btn-primary" (click)="sendMessage()">Send Message</button>
 </div>
